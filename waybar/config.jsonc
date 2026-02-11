@@ -9,7 +9,7 @@
 
         "modules-left": ["custom/launcher", "cpu", "custom/memory-gpu"],
         "modules-center": ["hyprland/workspaces"],
-        "modules-right": ["clock","custom/weather","custom/power"],
+        "modules-right": ["clock","custom/weather"],
 
         "custom/launcher": {
             "format": "",
@@ -101,8 +101,7 @@
             "custom/weather",
             "pulseaudio",
             "network#wifi",
-	    "tray",
-            "custom/power"
+	        "tray"
         ],
 
         // Left modules

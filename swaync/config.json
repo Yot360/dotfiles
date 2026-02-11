@@ -55,19 +55,19 @@
                 },
                 {
                     "label": "󰌾",
-                    "command": "hyprlock"
+                    "command": "loginctl lock-session"
                 },
                 {
                     "label": "⏾",
-                    "command": "hyprlock"
+                    "command": "loginctl suspend"
                 },
                 {
                     "label": "󰜉",
-                    "command": "sudo reboot"
+                    "command": "loginctl reboot"
                 },
                 {
                     "label": "󰐥",
-                    "command": "sudo shutdown now"
+                    "command": "loginctl poweroff"
                 }
             ]
         }
