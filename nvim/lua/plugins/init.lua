@@ -1,11 +1,5 @@
 return {
     {
-        "L3MON4D3/LuaSnip",
-        version = "v2.*",
-        build = "make install_jsregexp",
-        dependencies = { "rafamadriz/friendly-snippets" }
-    },
-    {
         "neovim/nvim-lspconfig",
         lazy = false,
         dependencies = {
@@ -15,13 +9,23 @@ return {
         },
         init = function()
         vim.g.coq_settings = {
-            auto_start = true,
-            -- Your COQ settings here
+            auto_start = 'shut-up',
+            xdg = true
         }
         end,
         config = function()
         -- Your LSP settings here
         end,
-    }
+    },
+    {
+        "CopilotC-Nvim/CopilotChat.nvim",
+        dependencies = {
+          { "nvim-lua/plenary.nvim", branch = "master" },
+        },
+        build = "make tiktoken",
+        opts = {
+            auto_insert_mode = true,
+        },
+    },
 
 }
