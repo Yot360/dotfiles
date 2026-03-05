@@ -14,13 +14,13 @@
     "label" : "shutdown",
     "action" : "loginctl poweroff",
     "text" : "Shutdown",
-    "keybind" : "s"
+    "keybind" : "a"
 }
 {
     "label" : "suspend",
     "action" : "loginctl suspend",
     "text" : "Suspend",
-    "keybind" : "u"
+    "keybind" : "v"
 }
 {
     "label" : "reboot",
@@ -32,5 +32,5 @@
     "label" : "hibernate",
     "action" : "loginctl hibernate",
     "text" : "Hibernate",
-    "keybind" : "a"
+    "keybind" : "h"
 }
